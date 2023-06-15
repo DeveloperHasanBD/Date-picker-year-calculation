@@ -1,4 +1,5 @@
 
+// Year restriction: Minimum 18 years as current date 
 
         $("#birthday").datepicker({
             onSelect: function (value, ui) {
@@ -16,8 +17,8 @@
             maxDate: new Date(),
             changeYear: true,
             changeMonth: true,
-            yearRange: "-100:-0",
-            maxDate: "0Y",
-            minDate: "-100Y",
+            yearRange: "1960:2010",
+            maxDate: "-18y",
+            // minDate: "-100Y",
             monthNamesShort: ["Gen", "Feb", "Mar", "Apr", "Mag", "Giu", "Lug", "Ago", "Set", "Ott", "Nov", "Dic"],
         });
